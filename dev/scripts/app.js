@@ -9112,7 +9112,7 @@ module.exports = function (regExp, replace) {
 /* 331 */
 /***/ (function(module, exports) {
 
-module.exports = "{{each goods}}{{if $value.coupon_tips != \"\"}}<li>    <a  href=\"{{$value.goods_jump_url}}\"><img src=\"{{$value.pic_url}}\" alt=\"\"></a>     <div>        <img src=\"{{$value.logo_url || $value.pic_url}}\" alt=\"\">    </div>    <p class=\"cuxiao\" >{{$value.coupon_tips}}</p>    <p class=\"shopname\" >{{$value.title.substring(0, 12)}}...        <span>上新</span>    </p></li>{{/if}}{{if $value.coupon_tips == \"\"}}<li>    <a></a><img src=\"{{$value.pic_url}}\" href = \"{{$value.goods_jump_url}}\"alt=\"\">    <div>        <img src=\"{{$value.logo_url || $value.pic_url}}\" alt=\"\">    </div>    <p class=\"cuxiao\" >{{$value.cprice}}</p>    <p class=\"shopname\">{{$value.title.substring(0, 12)}}...        <span>上新</span>    </p></li>{{/if}}{{/each}}"
+module.exports = "{{each goods}}{{if $value.coupon_tips != \"\"}}<li>    <a  href=\"{{$value.goods_jump_url}}\"><img src=\"{{$value.pic_url}}\" alt=\"\"></a>     <div>        <img src=\"{{$value.logo_url || $value.pic_url}}\" alt=\"\">    </div>    <p class=\"cuxiao\" >{{$value.coupon_tips}}</p>    <p class=\"shopname\" >{{$value.title.substring(0, 12)}}...        <span>上新</span>    </p></li>{{/if}}{{if $value.coupon_tips == \"\"}}<li>    <a href=\"{{$value.goods_jump_url}}\"><img src=\"{{$value.pic_url}}\"  alt=\"\"></a>    <div>        <img src=\"{{$value.logo_url || $value.pic_url}}\" alt=\"\">    </div>    <p class=\"cuxiao\" >{{$value.cprice}}</p>    <p class=\"shopname\">{{$value.title.substring(0, 12)}}...        <span>上新</span>    </p></li>{{/if}}{{/each}}"
 
 /***/ }),
 /* 332 */
