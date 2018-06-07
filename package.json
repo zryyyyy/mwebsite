@@ -1,0 +1,30 @@
+{
+  "scripts": {
+    "start": "gulp",
+    "mock": "./node_modules/.bin/json-server ./src/mock/mock.js -p 9000"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-watch": "^5.0.0",
+    "gulp-webserver": "^0.9.1",
+    "http-proxy-middleware": "^0.18.0",
+    "json-server": "^0.13.0",
+    "react": "^16.4.0",
+    "string-loader": "^0.0.1",
+    "zepto": "^1.2.0",
+    "webpack-stream": "^4.0.3"
+  },
+  "dependencies": {
+    "art-template": "^4.12.2",
+    "babel-runtime": "^6.26.0",
+    "express": "^4.16.3"
+    
+  }
+}

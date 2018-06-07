@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    // overflow: hidden;
+}
+
+html {
+    font-size: 100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    header,
+    footer {
+        width: 100%;
+        height: .44rem;
+    }
+
+    main {  
+        flex: 1;
+        overflow-y: scroll;
+        margin-bottom: .6rem;
+        .banner {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 1.45rem;
+            .wrap {
+                width: 100%;
+                height: 100%;
+                background: #009988;
+                overflow: hidden;
+                display: flex;
+                position: relative;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    float: left;
+                }
+            }
+            ul {
+                display: flex;
+                position: absolute;
+                top: 1.3rem;
+                justify-content: center;
+                align-items: center;
+                li {
+                    height: .09rem;
+                    width: .09rem;
+                    border: 1px solid #ddd;
+                    background: transparent;
+                    border-radius: 100%;
+                    margin: 0 0.1rem;
+                }
+            }
+        }
+
+        .active {
+            background: #fff !important;
+        }
+
+        .miaosha {
+            width: 100%;
+            height: .84rem;
+            ul {
+                display: flex;
+                width: 100%;
+                height: 100%;
+                li {
+                    display: flex;
+                    flex: 1;
+                    justify-content: center;
+                    img {
+                        width: .94rem;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+
+        .guanggao {
+            width: 100%;
+            height: .63rem;
+            background: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            div {
+                width: 100%;
+                height: .58rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: .05rem 0;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+
+        .goodhead {
+            width: 100%;
+            display: flex;
+            height: .44rem;
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: .18rem;
+                padding-left: .1rem;
+                position: relative;
+            }
+            .t1:after {
+                content: "";
+                position: absolute;
+                height: .44rem;
+                width: .72rem;
+                border-bottom: 3px solid red;
+            }
+        }
+
+        .goodhead div:nth-child(1) {
+            color: red;
+        }
+
+        .goodlist {
+            width: 100%;
+            ul {
+                display: flex;
+                width: 100%;
+                flex-wrap: wrap;
+                li {
+                    display: flex;
+                    width: 50%;
+                    height: 1.85rem;
+                    flex-direction: column;
+                    position: relative;
+                    margin-top: .55rem;
+                    a{
+                        height: 100%;
+                        
+                    }
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                    
+                    div {
+                        width: .45rem;
+                        height: .25rem;
+                        display: flex;
+                        position: absolute;
+                        right: .1rem;
+                        bottom: -.15rem;
+                        background: #fff;
+                        img {
+                            width: .45rem;
+                            height: .25rem;
+                        }
+                    }
+                    p {
+                        margin: 0;
+                        padding: 0;
+                        font-size: .14rem;
+                    }
+                }
+            }
+        }
+
+        .cuxiao {
+            color: red;
+            margin: .07rem !important;
+        }
+
+        .shopname {
+            font-size: .12rem !important;
+            color: #3b3b3b;
+            margin-left: .07rem !important;
+            margin-bottom: .07rem !important;
+            display: flex;
+        }
+
+        .shopname span {
+            position: absolute;
+            right: 0;
+            color: #bbb;
+        }
+
+        .goodlist ul li:nth-child(1) {
+            margin-top: 0;
+        }
+
+        .goodlist ul li:nth-child(2) {
+            margin-top: 0;
+        }
+        header {
+        display: flex;
+        align-items: center;
+         .headifo {
+             height: 100%;
+             width: 100%;
+             background: #ddd;
+             align-items: center;
+             display: flex;
+             background: #fff;
+             position: relative;
+             padding-right: 0;
+             padding: 0 0.2rem;
+             .search {
+                 display: flex;
+                 align-items: center;
+                 height: 0.30rem;
+                 flex: 1;
+                 background: #f2f2f2;
+                 border-radius: 10px;
+                 color: rgb(153, 153, 153);
+                 i {
+                     font-size: .18rem;
+                     width: .18rem;
+                     height: .18rem;
+                     margin: 0 .01rem;
+                 }
+                 span {
+                     color: red;
+                     font-size: .14rem;
+                     font-weight: 700;
+                     margin: 0 .05rem;
+                 }
+                 b {
+                     font-weight: 100;
+                     font-size: .14rem;
+                     color: rgb(153, 153, 153);
+                 }
+             }
+             img {
+                 height: 0.35rem;
+             }
+         }
+        }
+    }
+   
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* banner图 */
+
